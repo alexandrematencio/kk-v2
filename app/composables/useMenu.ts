@@ -23,7 +23,7 @@ export function useMenu() {
     entrees: [
       { title: 'Khao Tom', thai: 'ข้าวต้ม', description: 'Bol de riz au poulet, gingembre et citronnelle', price: 10, spicy: 0, img: 'khao-tom.jpg' },
       { title: 'Satay Gai', thai: 'สะเต๊ะไก่', description: 'Brochettes de poulet grillees, sauce cacahuete', price: 9, spicy: 1, img: 'satay-gai.jpg' },
-      { title: 'Nam Prik', thai: 'น้ำพริก', description: 'Sauce chili maison avec crudites', price: 8, spicy: 2, img: 'pad-thai-1.jpg' },
+      { title: 'Nam Prik', thai: 'น้ำพริก', description: 'Sauce chili maison avec crudites', price: 8, spicy: 2, img: 'satay-gai-2.jpg' },
     ],
     plats: [
       { title: 'Pad Thai', thai: 'ผัดไทย', description: 'Nouilles de riz sautees aux crevettes, cacahuetes et lime', price: 15, featured: true, spicy: 1, img: 'pad-thai-1.jpg' },
@@ -36,8 +36,8 @@ export function useMenu() {
       { title: 'Kluay Tod', thai: 'กล้วยทอด', description: 'Bananes grillees au sesame', price: 6, img: 'kluay-tod.jpg' },
     ],
     boissons: [
-      { title: 'Jus Passion', thai: 'น้ำเสาวรส', description: 'Fait maison, sans sucre ajoute', price: 5, img: 'tom-yum.jpg' },
-      { title: 'Jus Mango', thai: 'น้ำมะม่วง', description: 'Mangue fraiche de saison', price: 5, img: 'mango-sticky-rice-1.jpg' },
+      { title: 'Jus Passion', thai: 'น้ำเสาวรส', description: 'Fait maison, sans sucre ajoute', price: 5, img: 'tom-yum-2.jpg' },
+      { title: 'Jus Mango', thai: 'น้ำมะม่วง', description: 'Mangue fraiche de saison', price: 5, img: 'mango-sticky-rice-2.jpg' },
     ],
   }
 

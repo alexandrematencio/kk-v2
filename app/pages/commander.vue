@@ -2,6 +2,7 @@
 import { gsap } from 'gsap'
 import type { MenuCategory } from '../composables/useMenu'
 
+const baseURL = useRuntimeConfig().app.baseURL
 const { menuData, categories, categoryMeta } = useMenu()
 
 const activeCategory = ref<MenuCategory>('plats')
@@ -135,7 +136,7 @@ onMounted(() => {
     <ul class="order-items">
       <li v-for="item in currentItems" :key="item.title" class="order-item">
         <div class="item-img-wrapper">
-          <img :src="`/images/plats/${item.img}`" :alt="item.title" class="item-img" />
+          <img :src="`${baseURL}images/plats/${item.img}`" :alt="item.title" class="item-img" />
         </div>
         <div class="item-text">
           <h4 class="item-name">{{ item.title }}</h4>
