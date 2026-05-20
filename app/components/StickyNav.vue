@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const baseURL = useRuntimeConfig().app.baseURL
+
 const route = useRoute()
 const router = useRouter()
 
@@ -79,7 +81,7 @@ watch(isMenuOpen, (open) => {
     <div v-if="isVisible" class="sticky-nav">
       <NuxtLink to="/" class="sticky-logo-wrap" aria-label="Khan Kluay accueil">
         <img
-          src="/logos/khan-kluay-logo.svg"
+          :src="`${baseURL}logos/khan-kluay-logo.svg`"
           alt="Khan Kluay"
           class="sticky-logo"
         />

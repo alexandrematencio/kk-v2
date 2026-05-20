@@ -2,6 +2,8 @@
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
+const baseURL = useRuntimeConfig().app.baseURL
+
 const { menuData, categories, categoryMeta } = useMenu()
 
 const menuSectionRef = ref<HTMLElement | null>(null)
@@ -159,7 +161,7 @@ function setupAnimations() {
               </div>
             </div>
             <div class="menu-img-wrapper">
-              <img :src="`/images/plats/${item.img}`" :alt="item.title" class="menu-img" />
+              <img :src="`${baseURL}images/plats/${item.img}`" :alt="item.title" class="menu-img" />
             </div>
           </li>
         </ul>

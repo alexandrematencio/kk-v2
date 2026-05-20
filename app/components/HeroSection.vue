@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { gsap } from 'gsap'
 
+const baseURL = useRuntimeConfig().app.baseURL
+
 const ctaBtn = ref<HTMLButtonElement>()
 const ctaSize = ref({ w: 0, h: 0 })
 let ctaRO: ResizeObserver | null = null
@@ -74,7 +76,7 @@ onUnmounted(() => {
         <nav class="hero2-topnav">
           <NuxtLink to="/" class="hero2-logo-wrap" aria-label="Khan Kluay accueil">
             <img
-              src="/logos/khan-kluay-logo.svg"
+              :src="`${baseURL}logos/khan-kluay-logo.svg`"
               alt="Khan Kluay"
               class="hero2-logo"
             />
@@ -149,9 +151,9 @@ onUnmounted(() => {
 
         <div class="hero2-image-wrap">
           <picture>
-            <source media="(max-width: 768px)" srcset="/images/hero/responsive-mobile-img.png" />
+            <source media="(max-width: 768px)" :srcset="`${baseURL}images/hero/responsive-mobile-img.png`" />
             <img
-              src="/images/hero/hero-banner-img.png"
+              :src="`${baseURL}images/hero/hero-banner-img.png`"
               alt="Khan Kluay Thai Cuisine"
               class="hero2-image"
             />

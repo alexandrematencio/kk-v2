@@ -1,5 +1,7 @@
 <script setup lang="ts">
 definePageMeta({ layout: false })
+
+const baseURL = useRuntimeConfig().app.baseURL
 </script>
 
 <template>
@@ -13,7 +15,7 @@ definePageMeta({ layout: false })
       <p class="hours">Ouvert 7j/7 · 11h30-14h30 · 18h30-22h30</p>
       <p class="credit">
         Concept, design &amp; development by
-        <img src="/logos/logo-aaxlo.svg" alt="AAXLO" class="aaxlo-logo" />
+        <img :src="`${baseURL}logos/logo-aaxlo.svg`" alt="AAXLO" class="aaxlo-logo" />
       </p>
     </footer>
   </div>

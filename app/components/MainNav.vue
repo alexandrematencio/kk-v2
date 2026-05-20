@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const baseURL = useRuntimeConfig().app.baseURL
+
 const route = useRoute()
 const router = useRouter()
 
@@ -50,7 +52,7 @@ watch(isMenuOpen, (open) => {
   <div class="main-nav">
     <NuxtLink to="/" class="main-nav-logo-wrap" aria-label="Khan Kluay accueil">
       <img
-        src="/logos/khan-kluay-logo.svg"
+        :src="`${baseURL}logos/khan-kluay-logo.svg`"
         alt="Khan Kluay"
         class="main-nav-logo"
       />
