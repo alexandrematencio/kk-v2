@@ -276,6 +276,7 @@ onUnmounted(() => {
   font-weight: 500;
   color: #000000;
   text-decoration: none;
+  white-space: nowrap;
   transition: color 0.2s ease;
 }
 

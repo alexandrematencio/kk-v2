@@ -185,7 +185,7 @@ watch(isMenuOpen, (open) => {
 }
 
 .sticky-logo {
-  height: 40px;
+  height: 50px;
   width: auto;
   display: block;
 }
@@ -216,10 +216,11 @@ watch(isMenuOpen, (open) => {
 
 .sticky-nav-item {
   font-family: 'Inter', sans-serif;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 500;
   color: #000000;
   text-decoration: none;
+  white-space: nowrap;
   transition: color 0.2s ease;
 }
 
@@ -230,8 +231,8 @@ watch(isMenuOpen, (open) => {
 .sticky-contact {
   display: flex;
   align-items: center;
-  gap: 32px;
-  padding: 0 32px;
+  gap: 16px;
+  padding: 0 16px;
   flex-shrink: 0;
 }
 
@@ -285,8 +286,12 @@ watch(isMenuOpen, (open) => {
     padding: 0 16px;
   }
 
+  .sticky-nav-item {
+    font-size: 18px;
+  }
+
   .sticky-contact {
-    gap: 20px;
+    gap: 16px;
     padding: 0 16px;
   }
 }

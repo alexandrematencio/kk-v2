@@ -73,6 +73,15 @@ Two components share the same nav design and must be kept visually consistent wi
 
 Both use the same row layout (`logo | nav-items | contact`), same center-stroke borders, same breakpoints, same icons-only intermediate state at 1025–1200px, same mobile collapse to burger at ≤1024px. Any design tweak must be propagated to **all three** files (`HeroSection.vue`, `MainNav.vue`, `StickyNav.vue`).
 
+### Intentional divergence — background color
+
+The companion navs sit on white page surfaces, not the hero's cream:
+
+- `HeroSection.vue` topnav — `#faf4ef` (the hero's cream background).
+- `MainNav.vue` and `StickyNav.vue` — `#ffffff`.
+
+This is deliberate. Do **not** "sync" the companion navs back to cream. Logo size (50px), nav-item font (24px → 18px at ≤1280px) and all layout rules stay identical across the three.
+
 ---
 
 **Last updated**: 2026-05-16

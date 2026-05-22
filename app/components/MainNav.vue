@@ -112,7 +112,7 @@ watch(isMenuOpen, (open) => {
   height: 74px;
   display: flex;
   align-items: stretch;
-  background: #faf4ef;
+  background: #ffffff;
 }
 
 .main-nav::after {
@@ -188,6 +188,7 @@ watch(isMenuOpen, (open) => {
   font-weight: 500;
   color: #000000;
   text-decoration: none;
+  white-space: nowrap;
   transition: color 0.2s ease;
 }
 
@@ -198,8 +199,8 @@ watch(isMenuOpen, (open) => {
 .main-nav-contact {
   display: flex;
   align-items: center;
-  gap: 32px;
-  padding: 0 32px;
+  gap: 16px;
+  padding: 0 16px;
   flex-shrink: 0;
 }
 
@@ -249,7 +250,7 @@ watch(isMenuOpen, (open) => {
   }
 
   .main-nav-contact {
-    gap: 20px;
+    gap: 16px;
     padding: 0 16px;
   }
 }
