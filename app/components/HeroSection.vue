@@ -696,8 +696,18 @@ onUnmounted(() => {
   }
 
   .hero2-image-wrap {
-    min-height: 320px;
-    max-height: 480px;
+    /* flex:none so the explicit height wins over the base flex-basis:0% */
+    flex: none;
+    height: 480px;
+  }
+
+  /* <picture> defaults to display:inline, which breaks the image's
+     height:100% chain and leaves an inline line-box gap above it.
+     Make it a block that fills the wrap so object-fit:cover applies. */
+  .hero2-image-wrap picture {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 
   .hero2-image-wrap::before {
